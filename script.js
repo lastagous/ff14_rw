@@ -72,7 +72,7 @@ function generateRwCheckPane(jobId) {
         var weapon = job.Rws[i];
 
         var display = $.cookie("rw-img-" + weapon.ID) ? $.cookie("rw-img-" + weapon.ID) : "none";
-        var prevDisplay = prev == null ? null : $.cookie("rw-img-" + job.Rws[i - 1]) ? $.cookie("rw-img-" + job.Rws[i - 1]) : "none";
+        var prevDisplay = prev == null ? null : $.cookie("rw-img-" + prev) ? $.cookie("rw-img-" + prev) : "none";
 
         var arrow_animation_button = (prevDisplay == null || prevDisplay == "block") && display == "none" ? " arrow_animation_button" : "";
         var stamp = display == "none" ? "" : "stamp";
