@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <title>RWのクエスト進行と進捗管理</title>
+</head>
+
+<body class="bg-dark">
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">FF14 RW進捗チェックサイト</a>
+    </nav>
+    <div id="main" class=" bg-secondary text-light">
+        <div class="container">
+            <button class="btn btn-dark m-2" type="button" data-toggle="collapse" data-target="#job-form-collapse" aria-expanded="false" aria-controls="job-form-collapse">ジョブ選択</button>
+            <div class="collapse" id="job-form-collapse">
+                <div class="card card-body m-2 bg-dark">
+                    <div id="job-form" class="form-group"></div>
+                </div>
+            </div>
+            <div class="progress m-3 bg-dark" style="height: 40px;">
+                <div id="progress" class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div id="job-cards" class="card-columns"></div>
+        </div>
+    </div>
+    <footer class="footer bg-dark">
+        <div id="container">
+            (C) SQUARE ENIX CO., LTD. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="https://img.finalfantasyxiv.com/lds/pc/global/js/eorzeadb/loader.js?v2"></script>
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
